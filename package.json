@@ -1,0 +1,14 @@
+{
+  "name": "MovClub",
+  "version": "1.0.0",
+  "description": "MovClub: Chat With Scrolling Messages - Admin, Remote & Client",
+  "main": "server.js",
+  "repository": "",
+  "author": "Noxyo <admin@noxyo.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "jade": "*",
+    "socket.io": "~0.9.14"
+  }
+}

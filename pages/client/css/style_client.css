@@ -1,0 +1,31 @@
+body {background:#ddd; }
+.centro {
+	margin-left: auto;
+	margin-right: auto;
+}
+#contentWrap{
+	display: none;
+	margin: 2px auto;
+}
+#chatWrap{
+	width: 400px;
+	padding: 50px 80px;
+	margin: 2px auto;
+}
+#nickWrap{
+	width: 400px;
+	padding: 50px 50px;
+	margin: 2px auto;
+}
+#top_head{
+	background-color: #bfbfbf;
+	text-align: center;
+	color: #d72a18;
+	font-size: 14px; 
+	font-weight: bold;
+	vertical-align: middle;
+	padding: 2px 1px;
+}
+#nickError{
+	color: red;
+}

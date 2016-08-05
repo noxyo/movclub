@@ -1,0 +1,87 @@
+<html>
+<head>
+
+	<title>MovClub - TV Screen</title>
+
+	<!--  Meta Name -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<!--  Scripts -->
+    <script src="/screen/js/jquery.min.js"></script> 
+    <script src="/screen/js/jquery-ui.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/screen/js/jquery.li-scroller.1.0.js"></script>
+
+    <!--   Config Node.JS  -->
+    <script src="/screen/njs/screen.js"></script>
+
+    <!--  Style CSS -->
+	<link href="/screen/css/style_screen.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/screen/css/jquery-ui.css">
+
+</head>
+<body>
+	<script>
+	// ---  Intro Loading -- //
+	jQuery(window).load(function(){
+		jQuery('#loading').fadeOut(6000);
+		jQuery('#club').fadeOut(5500);
+		setTimeout(function() {
+			$('#player').css("display","block");
+			document.getElementById("video1").play();
+		}, 7000);
+	});
+
+	function vidPause() {
+	//onended="load()"
+	}
+	</script>
+	<div id="content">
+		<div id="fora" style="text-align:center">
+			<div id="club" style="text-align:center"><img class="centro" src="/screen/img/movclub-set1.jpg"></div>
+			<div id="player" style="text-align:center">
+				<div id="player_vid">
+					<video id="video1" width="780" height="560" loop autoplay>
+						<source src="/videos/active.mp4" type="video/mp4">
+					</video>
+					<div class="scrolling">
+						<div id="noticia">
+							<div id="msg-noticia">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="loading" style="text-align:center"><img class="centro" src="/screen/img/loader.gif"></div>
+		</div>
+	</div>
+
+	<script>
+	// --- Menu lateral "toggle" -- Chat //
+	$( document ).click(function() {
+		$( "#chatWrap" ).toggle( "slide" ); 
+	});
+	</script>
+
+	<div id="contentWrap">
+		<div id="chatWrap">
+			<div id="chat"></div>
+		</div>
+	</div>
+	<div id="menu_dir">
+		<div id="title_users">
+			<div class="bubble_label"><div class="labelbubble">ONLINE</div><br class="clear"></div>
+			<div id="users"></div>
+		</div>
+	</div>
+
+	<script>
+	// --- Menu lateral "toggle" -- Users //
+	$( document ).click(function() {
+		$( "#title_users" ).toggle( "slide",{direction:'right'},"slow"); 
+	});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Chat with Us - Cliente Module</title>
+
+	<!--  Meta Name -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<!--  Scripts -->
+<!--	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+    <script src="/client/js/jquery.min.js"></script>
+<!--    <script src="http://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <script src="/client/js/jquery-ui.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!--   Config Node.JS  -->
+    <script src="/client/njs/client.js"></script>
+
+    <!--  Style CSS -->
+    <link href="/client/css/style_client.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/client/css/jquery-ui.css">
+
+<!--
+	Reduzida a quantidade de codigo na pagina:
+		- Node.JS  -> /client/njs/client.js
+		- Style    -> /client/css/style_client.css
+-->
+
+
+
+
+
+</head>
+<body>
+<header id="top_head"><h1>Chat with Us - Cliente Module</h1></header>
+<div id="nickWrap">
+	<p>Introduza o seu Nick:</p>	
+	<form id="setNick">
+		<input size="35" id="nickname"></input>
+		<input type="submit" value="Escolher Nick"></input>
+	</form>
+	<p id="nickError"></p>
+</div>
+<div id="contentWrap">
+    <div id="chatWrap"> 
+		<form id="send-message">
+			<input size="35" id="message"></input>
+			<input type="submit" value="Enviar Mensagem"></input>
+		</form>
+	</div>
+</div>
+<div id="content_out">
+	<div id="menuControl">
+	</div>
+</div>
+</body>
+</html>
